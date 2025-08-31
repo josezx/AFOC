@@ -1,0 +1,275 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+  <meta charset="utf-8" />
+  <meta name="viewport" content="width=device-width,initial-scale=1" />
+  <title>Recetas | AFOC</title>
+  <link rel="stylesheet" href="css/estilos.css" />
+</head>
+<body>
+  <header class="topbar">
+    <div class="container nav">
+      <a class="brand" href="index.html"><img src="img/logo.png" class="logo" alt="AFOC"><span>AFOC</span></a>
+      <nav>
+        <a href="index.html">Inicio</a>
+        <a href="recetas.html" class="active">Recetas</a>
+      </nav>
+    </div>
+  </header>
+
+  <main class="container">
+    <h1>Recetas</h1>
+
+    <div class="chips">
+      <button class="chip" data-cat="Todas">Todas</button>
+      <button class="chip" data-cat="Platos segundos">Platos segundos</button>
+      <button class="chip" data-cat="Sopas">Sopas</button>
+      <button class="chip" data-cat="Jugos">Jugos</button>
+    </div>
+
+    <input id="buscador" class="input" type="search" placeholder="Buscar por nombre, ingrediente o nivel..." />
+
+    <div id="alerta" class="note" style="display:none;margin:.5rem 0;"></div>
+
+    <section id="grupo-Platos segundos">
+      <h2>Platos segundos</h2>
+      <div class="grid3" data-grid="Platos segundos"></div>
+    </section>
+
+    <section id="grupo-Sopas">
+      <h2>Sopas</h2>
+      <div class="grid3" data-grid="Sopas"></div>
+    </section>
+
+    <section id="grupo-Jugos">
+      <h2>Jugos</h2>
+      <div class="grid3" data-grid="Jugos"></div>
+    </section>
+  </main>
+
+  <footer class="footer">
+    <div class="container">
+      <p>© 2025 AFOC</p>
+    </div>
+  </footer>
+
+  <script>
+    // Fallback embebido por si falla fetch (por rutas/servidor)
+    window.RECETAS_EMBED = [
+  {
+    "id": "sopa-quinua",
+    "nombre": "Sopa de quinua",
+    "categoria": "Sopas",
+    "nivel": "Básico",
+    "tiempo": 30,
+    "costo": "10–15",
+    "porciones": 4,
+    "img": "img/recetas/sopa_de_quinua.jpg",
+    "ingredientes": [
+      "1 taza de quinua lavada",
+      "1 cebolla pequeña",
+      "1 zanahoria",
+      "1 papa",
+      "1 litro de caldo",
+      "Sal y especias al gusto"
+    ],
+    "pasos": [
+      "Sofríe cebolla y zanahoria con una cucharadita de aceite.",
+      "Agrega la quinua lavada y el caldo.",
+      "Hierve 15–20 min; añade papa en cubos y cocina hasta ablandar.",
+      "Ajusta sal/especias y sirve caliente."
+    ],
+    "info": "Baja en grasa; rica en carbohidratos complejos."
+  },
+  {
+    "id": "sopa-mani",
+    "nombre": "Sopa de maní (light)",
+    "categoria": "Sopas",
+    "nivel": "Intermedio",
+    "tiempo": 40,
+    "costo": "15–22",
+    "porciones": 4,
+    "img": "img/recetas/sopa_de_mani.jpg",
+    "ingredientes": [
+      "1/2 taza de maní tostado molido",
+      "1 cebolla, 1 zanahoria",
+      "1 papa, 1 rama de apio",
+      "1 litro de caldo",
+      "Sal, comino, orégano"
+    ],
+    "pasos": [
+      "Licua el maní con una taza de caldo.",
+      "Sofríe verduras picadas; agrega el resto del caldo.",
+      "Incorpora el maní licuado y cocina a fuego bajo 15–20 min.",
+      "Rectifica sal y sirve."
+    ],
+    "info": "Versión ligera con menos aceite."
+  },
+  {
+    "id": "saice",
+    "nombre": "Saice tarijeño",
+    "categoria": "Platos segundos",
+    "nivel": "Intermedio",
+    "tiempo": 45,
+    "costo": "18–25",
+    "porciones": 5,
+    "img": "img/recetas/saice.jpg",
+    "ingredientes": [
+      "500 g de carne molida",
+      "1 cebolla, 1 tomate",
+      "Arveja y papa picada",
+      "Achiote, comino, sal"
+    ],
+    "pasos": [
+      "Sofríe cebolla y tomate, añade la carne y condimentos.",
+      "Agrega arveja y papa con un poco de caldo; cocina hasta espesar.",
+      "Sirve con arroz o fideo."
+    ],
+    "info": "Clásico plato tarijeño."
+  },
+  {
+    "id": "pique-macho",
+    "nombre": "Pique macho casero",
+    "categoria": "Platos segundos",
+    "nivel": "Intermedio",
+    "tiempo": 50,
+    "costo": "25–35",
+    "porciones": 4,
+    "img": "img/recetas/pique_macho.jpg",
+    "ingredientes": [
+      "500 g de carne en tiras",
+      "Papas fritas al horno o sartén",
+      "Cebolla, tomate, locoto",
+      "Sal, pimienta, comino"
+    ],
+    "pasos": [
+      "Sazona y saltea la carne hasta dorar.",
+      "Agrega cebolla, tomate y locoto en tiras; saltea 2–3 min.",
+      "Sirve sobre papas y acompaña con huevo duro si deseas."
+    ],
+    "info": "Puedes hacer las papas al horno para reducir aceite."
+  },
+  {
+    "id": "jugo-mocochinchi",
+    "nombre": "Jugo de mocochinchi",
+    "categoria": "Jugos",
+    "nivel": "Básico",
+    "tiempo": 25,
+    "costo": "5–8",
+    "porciones": 5,
+    "img": "img/recetas/jugo_mocochinchi.jpg",
+    "ingredientes": [
+      "4 mocochinchis (duraznos secos)",
+      "2 litros de agua",
+      "Azúcar al gusto",
+      "Canela, clavo (opcional)"
+    ],
+    "pasos": [
+      "Hierve los mocochinchis con especias 20–25 min.",
+      "Endulza al gusto y enfría antes de servir."
+    ],
+    "info": "Clásico refresco boliviano."
+  },
+  {
+    "id": "jugo-limon-quinua",
+    "nombre": "Limonada con quinua",
+    "categoria": "Jugos",
+    "nivel": "Básico",
+    "tiempo": 10,
+    "costo": "4–7",
+    "porciones": 4,
+    "img": "img/recetas/jugo_limon_quinua.jpg",
+    "ingredientes": [
+      "Jugo de 4 limones",
+      "4 tazas de agua fría",
+      "2–3 cucharadas de quinua cocida",
+      "Azúcar o edulcorante al gusto",
+      "Hielo"
+    ],
+    "pasos": [
+      "Licua agua con jugo de limón y quinua cocida.",
+      "Endulza al gusto, cuela si prefieres y sirve con hielo."
+    ],
+    "info": "Toque nutritivo con quinua."
+  }
+];
+  </script>
+
+  <script>
+    let recetas = [];
+    let filtroCategoria = 'Todas';
+    let filtroTexto = '';
+
+    const grids = {};
+    function card(r){
+      return `
+      <article class="card recipe">
+        <img src="${r.img}" alt="${r.nombre}">
+        <div class="padded">
+          <h4>${r.nombre} </h4>
+          <p>${r.categoria} · Nivel: ${r.nivel} · Tiempo: ${r.tiempo} min · Costo: Bs ${r.costo}</p>
+          <a class="link" href="detalle.html?id=${r.id}">Ver receta</a>
+        </div>
+      </article>`;
+    }
+
+    function render(){
+      for(const cat of ['Platos segundos','Sopas','Jugos']){
+        grids[cat].innerHTML='';
+      }
+      const q = filtroTexto.toLowerCase();
+      const data = recetas.filter(r => 
+        (filtroCategoria==='Todas' || r.categoria===filtroCategoria) &&
+        (r.nombre.toLowerCase().includes(q) ||
+         (r.ingredientes||[]).join(' ').toLowerCase().includes(q) ||
+         r.nivel.toLowerCase().includes(q))
+      );
+      for(const r of data){
+        if(grids[r.categoria]) grids[r.categoria].innerHTML += card(r);
+      }
+      for(const cat of ['Platos segundos','Sopas','Jugos']){
+        const section = document.getElementById('grupo-'+cat);
+        section.style.display = grids[cat].children.length ? '' : 'none';
+      }
+    }
+
+    async function cargar(){
+      for(const cat of ['Platos segundos','Sopas','Jugos']){
+        grids[cat] = document.querySelector('[data-grid="'+cat+'"]');
+      }
+      // chips
+      document.querySelectorAll('.chip[data-cat]').forEach(btn=>{
+        btn.addEventListener('click', ()=>{
+          filtroCategoria = btn.dataset.cat;
+          render();
+          history.replaceState(null,'','#'+encodeURIComponent(filtroCategoria));
+        });
+      });
+      // buscador
+      document.getElementById('buscador').addEventListener('input', e=>{
+        filtroTexto = e.target.value;
+        render();
+      });
+
+      // Cargar JSON con fallback embebido
+      try {
+        const res = await fetch('data/recetas.json', { cache: 'no-store' });
+        if(!res.ok) throw new Error('HTTP '+res.status);
+        recetas = await res.json();
+      } catch(err) {
+        console.warn('No se pudo cargar data/recetas.json, usando fallback embebido:', err);
+        recetas = (window.RECETAS_EMBED || []);
+        const alerta = document.getElementById('alerta');
+        alerta.style.display='block';
+        alerta.textContent = 'Usando datos embebidos. Verifica la ruta: /data/recetas.json';
+      }
+
+      // ancla de URL
+      const hash = decodeURIComponent(location.hash.replace('#',''));
+      if(['Platos segundos','Sopas','Jugos'].includes(hash)) filtroCategoria = hash;
+      render();
+    }
+    cargar();
+  </script>
+</body>
+</html>

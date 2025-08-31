@@ -1,0 +1,324 @@
+[
+  {
+    "id": "jugo-frutilla-leche",
+    "nombre": "Batido de frutilla (con leche)",
+    "categoria": "Jugos",
+    "nivel": "Básico",
+    "tiempo": 8,
+    "costo": "7–12",
+    "porciones": 3,
+    "img": "img/recetas/jugo_frutilla_leche.jpg",
+    "ingredientes": [
+      "2 tazas de frutillas",
+      "2 tazas de leche",
+      "Azúcar al gusto",
+      "Hielo"
+    ],
+    "pasos": [
+      "Licua frutillas con leche, endulza al gusto.",
+      "Sirve frío."
+    ],
+    "info": "Estilo batido, muy popular."
+  },
+  {
+    "id": "jugo-mango",
+    "nombre": "Jugo de mango",
+    "categoria": "Jugos",
+    "nivel": "Básico",
+    "tiempo": 8,
+    "costo": "6–10",
+    "porciones": 4,
+    "img": "img/recetas/jugo_mango.jpg",
+    "ingredientes": [
+      "2 mangos maduros",
+      "3 tazas de agua fría",
+      "Azúcar al gusto",
+      "Hielo"
+    ],
+    "pasos": [
+      "Licua mango con agua, endulza y sirve con hielo."
+    ],
+    "info": "Dulce y cremoso."
+  },
+  {
+    "id": "jugo-maracuya",
+    "nombre": "Jugo de maracuyá",
+    "categoria": "Jugos",
+    "nivel": "Básico",
+    "tiempo": 10,
+    "costo": "7–12",
+    "porciones": 4,
+    "img": "img/recetas/jugo_maracuya.jpg",
+    "ingredientes": [
+      "4 maracuyás",
+      "4 tazas de agua",
+      "Azúcar al gusto",
+      "Hielo"
+    ],
+    "pasos": [
+      "Extrae la pulpa y licua con agua.",
+      "Cuela, endulza y sirve con hielo."
+    ],
+    "info": "Ácido y aromático."
+  },
+  {
+    "id": "jugo-mocochinchi",
+    "nombre": "Jugo de mocochinchi",
+    "categoria": "Jugos",
+    "nivel": "Básico",
+    "tiempo": 25,
+    "costo": "5–8",
+    "porciones": 5,
+    "img": "img/recetas/jugo_mocochinchi.jpg",
+    "ingredientes": [
+      "4 mocochinchis (duraznos secos)",
+      "2 litros de agua",
+      "Azúcar al gusto",
+      "Canela, clavo (opcional)"
+    ],
+    "pasos": [
+      "Hierve los mocochinchis con especias 20–25 min.",
+      "Endulza al gusto y enfría antes de servir."
+    ],
+    "info": "Clásico refresco boliviano."
+  },
+  {
+    "id": "jugo-papaya",
+    "nombre": "Jugo de papaya",
+    "categoria": "Jugos",
+    "nivel": "Básico",
+    "tiempo": 8,
+    "costo": "6–10",
+    "porciones": 4,
+    "img": "img/recetas/jugo_papaya.jpg",
+    "ingredientes": [
+      "2 tazas de papaya madura en cubos",
+      "3 tazas de agua fría",
+      "Azúcar o miel al gusto",
+      "Hielo"
+    ],
+    "pasos": [
+      "Licua papaya con agua y endulza al gusto.",
+      "Cuela si deseas y sirve con hielo."
+    ],
+    "info": "Refrescante y digestivo."
+  },
+  {
+    "id": "jugo-pina-menta",
+    "nombre": "Jugo de piña con hierbabuena",
+    "categoria": "Jugos",
+    "nivel": "Básico",
+    "tiempo": 10,
+    "costo": "8–12",
+    "porciones": 4,
+    "img": "img/recetas/jugo_pina_menta.jpg",
+    "ingredientes": [
+      "2 tazas de piña en cubos",
+      "3 tazas de agua",
+      "Hojas de hierbabuena",
+      "Azúcar al gusto"
+    ],
+    "pasos": [
+      "Licua piña con agua y hojas de hierbabuena.",
+      "Cuela, endulza y sirve frío."
+    ],
+    "info": "Muy refrescante."
+  },
+  {
+    "id": "jugo-sandia",
+    "nombre": "Jugo de sandía",
+    "categoria": "Jugos",
+    "nivel": "Básico",
+    "tiempo": 7,
+    "costo": "5–9",
+    "porciones": 4,
+    "img": "img/recetas/jugo_sandia.jpg",
+    "ingredientes": [
+      "3 tazas de sandía en cubos (sin semillas)",
+      "2 tazas de agua o al gusto",
+      "Jugo de 1/2 limón (opcional)"
+    ],
+    "pasos": [
+      "Licua la sandía con agua; añade limón si deseas.",
+      "Sirve bien frío."
+    ],
+    "info": "Hidratante."
+  },
+  {
+    "id": "jugo-tumbo",
+    "nombre": "Jugo de tumbo",
+    "categoria": "Jugos",
+    "nivel": "Básico",
+    "tiempo": 10,
+    "costo": "6–10",
+    "porciones": 4,
+    "img": "img/recetas/jugo_tumbo.jpg",
+    "ingredientes": [
+      "4 tumbos maduros",
+      "4 tazas de agua",
+      "Azúcar al gusto"
+    ],
+    "pasos": [
+      "Licua pulpa de tumbo con agua.",
+      "Cuela y endulza al gusto."
+    ],
+    "info": "Clásico jugo andino."
+  },
+  {
+    "id": "jugo-zanahoria-naranja",
+    "nombre": "Jugo de zanahoria y naranja",
+    "categoria": "Jugos",
+    "nivel": "Básico",
+    "tiempo": 12,
+    "costo": "7–11",
+    "porciones": 4,
+    "img": "img/recetas/jugo_zanahoria_naranja.jpg",
+    "ingredientes": [
+      "2 zanahorias medianas",
+      "2 tazas de jugo de naranja",
+      "Agua para licuar si hace falta"
+    ],
+    "pasos": [
+      "Licua zanahorias con un poco de agua.",
+      "Mezcla con el jugo de naranja y sirve."
+    ],
+    "info": "Rico en vitamina A y C."
+  },
+  {
+    "id": "limonada-menta",
+    "nombre": "Limonada con menta",
+    "categoria": "Jugos",
+    "nivel": "Básico",
+    "tiempo": 6,
+    "costo": "4–7",
+    "porciones": 4,
+    "img": "img/recetas/limonada_menta.jpg",
+    "ingredientes": [
+      "Jugo de 4 limones",
+      "4 tazas de agua",
+      "Hojas de menta",
+      "Azúcar al gusto",
+      "Hielo"
+    ],
+    "pasos": [
+      "Mezcla agua, jugo de limón y azúcar.",
+      "Añade menta ligeramente machacada y hielo."
+    ],
+    "info": "Clásico refresco veraniego."
+  },
+  {
+    "id": "jugo-limon-quinua",
+    "nombre": "Limonada con quinua",
+    "categoria": "Jugos",
+    "nivel": "Básico",
+    "tiempo": 10,
+    "costo": "4–7",
+    "porciones": 4,
+    "img": "img/recetas/jugo_limon_quinua.jpg",
+    "ingredientes": [
+      "Jugo de 4 limones",
+      "4 tazas de agua fría",
+      "2–3 cucharadas de quinua cocida",
+      "Azúcar o edulcorante al gusto",
+      "Hielo"
+    ],
+    "pasos": [
+      "Licua agua con jugo de limón y quinua cocida.",
+      "Endulza al gusto, cuela si prefieres y sirve con hielo."
+    ],
+    "info": "Toque nutritivo con quinua."
+  },
+  {
+    "id": "pique-macho",
+    "nombre": "Pique macho casero",
+    "categoria": "Platos segundos",
+    "nivel": "Intermedio",
+    "tiempo": 50,
+    "costo": "25–35",
+    "porciones": 4,
+    "img": "img/recetas/pique_macho.jpg",
+    "ingredientes": [
+      "500 g de carne en tiras",
+      "Papas fritas al horno o sartén",
+      "Cebolla, tomate, locoto",
+      "Sal, pimienta, comino"
+    ],
+    "pasos": [
+      "Sazona y saltea la carne hasta dorar.",
+      "Agrega cebolla, tomate y locoto en tiras; saltea 2–3 min.",
+      "Sirve sobre papas y acompaña con huevo duro si deseas."
+    ],
+    "info": "Puedes hacer las papas al horno para reducir aceite."
+  },
+  {
+    "id": "saice",
+    "nombre": "Saice tarijeño",
+    "categoria": "Platos segundos",
+    "nivel": "Intermedio",
+    "tiempo": 45,
+    "costo": "18–25",
+    "porciones": 5,
+    "img": "img/recetas/saice.jpg",
+    "ingredientes": [
+      "500 g de carne molida",
+      "1 cebolla, 1 tomate",
+      "Arveja y papa picada",
+      "Achiote, comino, sal"
+    ],
+    "pasos": [
+      "Sofríe cebolla y tomate, añade la carne y condimentos.",
+      "Agrega arveja y papa con un poco de caldo; cocina hasta espesar.",
+      "Sirve con arroz o fideo."
+    ],
+    "info": "Clásico plato tarijeño."
+  },
+  {
+    "id": "sopa-mani",
+    "nombre": "Sopa de maní (light)",
+    "categoria": "Sopas",
+    "nivel": "Intermedio",
+    "tiempo": 40,
+    "costo": "15–22",
+    "porciones": 4,
+    "img": "img/recetas/sopa_de_mani.jpg",
+    "ingredientes": [
+      "1/2 taza de maní tostado molido",
+      "1 cebolla, 1 zanahoria",
+      "1 papa, 1 rama de apio",
+      "1 litro de caldo",
+      "Sal, comino, orégano"
+    ],
+    "pasos": [
+      "Licua el maní con una taza de caldo.",
+      "Sofríe verduras picadas; agrega el resto del caldo.",
+      "Incorpora el maní licuado y cocina a fuego bajo 15–20 min.",
+      "Rectifica sal y sirve."
+    ],
+    "info": "Versión ligera con menos aceite."
+  },
+  {
+    "id": "sopa-quinua",
+    "nombre": "Sopa de quinua",
+    "categoria": "Sopas",
+    "nivel": "Básico",
+    "tiempo": 30,
+    "costo": "10–15",
+    "porciones": 4,
+    "img": "img/recetas/sopa_de_quinua.jpg",
+    "ingredientes": [
+      "1 taza de quinua lavada",
+      "1 cebolla pequeña",
+      "1 zanahoria",
+      "1 papa",
+      "1 litro de caldo",
+      "Sal y especias al gusto"
+    ],
+    "pasos": [
+      "Sofríe cebolla y zanahoria con una cucharadita de aceite.",
+      "Agrega la quinua lavada y el caldo.",
+      "Hierve 15–20 min; añade papa en cubos y cocina hasta ablandar.",
+      "Ajusta sal/especias y sirve caliente."
+    ],
+    "info": "Baja en grasa; rica en carbohidratos complejos."
+  }
+]
